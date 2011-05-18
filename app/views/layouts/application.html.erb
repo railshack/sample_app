@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Ruby on Rails Tutorial Sample App | <%= @title %></title>
+		<title><%= title %></title>
 		<%= csrf_meta_tag %>
+		<%= stylesheet_link_tag 'blueprint/screen', :media => 'screen, projection' %>
+		<%= stylesheet_link_tag 'blueprint/print', :media => 'print' %>
+		<!--<%= stylesheet_link_tag 'blueprint/ie', :media => 'screen, projection' %>-->		
 	</head>
 	<body>
 		<%= yield %>
